@@ -1,0 +1,66 @@
+==================================================================
+https://keybase.io/mmai
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://bourcereau.fr
+  * I am mmai (https://keybase.io/mmai) on keybase.
+  * I have a public key with fingerprint 2BAB 28EB 600F E571 55F6  0330 50AC 7982 A2BC 78E8
+
+To claim this, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "fingerprint": "2bab28eb600fe57155f6033050ac7982a2bc78e8",
+            "host": "keybase.io",
+            "key_id": "50ac7982a2bc78e8",
+            "uid": "f88cbfbe505735409b6e48f9f46aae00",
+            "username": "mmai"
+        },
+        "service": {
+            "hostname": "bourcereau.fr",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1400150399,
+    "expire_in": 157680000,
+    "prev": "81b71868aa3863cd8006044c45fbc7da1349f10cb2d77a070a0bdf82aaa39fd8",
+    "seqno": 3,
+    "tag": "signature"
+}
+
+with the aforementioned key, yielding the PGP signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v0.1.14
+Comment: https://keybase.io/crypto
+
+yMHuAnicbVFbTBRXGN6VhZblIqGJwaaNdbCGpJvNmZ37YkJMmtaHErWIAYSsZ2bO
+LBPZmXFmdivsgnJJTEhL2LTBtN0EH4gvEh7QhgcxQkFEEGyg0ahNsCFEoUqReGnA
+Es4QfPO8nJzv9p///0dz0lxe93LsIJFrf3LIPTm0HHWV2T+fjROiLtcTwThxCm1d
+iqqFkWmYqmYTQSIgQjHAI5EFQEEMRzKMwgKKAgyAEifwARgQJY5HPOEjanXLceAY
+EVrIr+oYw4+QKmP0PfroFqHwvCQqImIAw1EMDQSRRTSvCArNQogAcIQWMjUYQVgd
+iUCVaPQRGImpEkbiW2W3WVGPmhIyEYz6FRMbDVO3dUmvw1StbRtBx2nXG470OySG
+tkNCoqrJuGlsiCHTUnWNCJJYKdmqk0rSAJAMoATBR6AzhmqikOooGI7lAT5OGRTD
+kTwpciTP8hBSPEtJMmZZQNMSzSi4ZxmSFC0oJJDEgMxxEHAAAlFW8EiwQVBkZyQW
+Oq3pRJDC34RhHGmpYQ3aURMRjb8PVXtcbq8rI32HszaXNzPv3TKH8z/YKMw1kq3J
+/4sHtaU362M9T6sPrEy1uk88Wej+8WTi5vTkTHI1NbihHN8PZjoTrw97Soc/z9lg
+rLzkWrZvtGqxq6+oVH4+Mb/rt6Xeq7f/vjdclHz50fT8kYR/zw8tD7IGszrii1/+
+982Nj/OU9Le/ZC/sg6nx8tVxteZWT4OxXkg2IWaggns01//wSl/hbKVS9ufjpoLU
+RP0do2rk2hIwLmWq548O7a1pbtttGSH904X2gowRT8STHJPnJiqm7/9U8sJ7vU7o
+Krnw/a/+z3rv/pu43Okj/zrW8IfVXym1fR3Od59b6Xj1bGdx2lrFP00tzV9dHPi2
++8OWKaF8efaLFNW+CW9XFxM=
+=fmwb
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/mmai
+
+==================================================================
+

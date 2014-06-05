@@ -1,0 +1,57 @@
+|<?php
+|$success = "";
+|if (!empty($_REQUEST['email'])) {
+|  //Get form infos
+|  $name = $_REQUEST['name'];
+|  $email = $_REQUEST['email'];
+|  $message = $_REQUEST['message'];
+| 
+|  $txt = "Name : $name\n";
+|  $txt .= "Email : $email\n";
+|  $txt .= "Message : $message\n";
+| 
+|  //Log message
+| 
+|  //Send message
+|  $headers = "From: $email" . "\r\n";
+|  $success = mail('henri@bourcereau.fr', 'contact from bourcereau.fr', $txt, $headers)?"ok":"nok";
+|}
+|if ($success == "ok") {
+|?>
+.alert.alert-success Message envoyé
+|<?php
+|} else if ($success == "nok") {
+|?>
+.alert.alert-warning Désolé, une erreur s'est produite et votre message n'a pas été transmis. Vous pouvez directement m'envoyer un email à l'adresse henri@bourcereau.fr
+|<?php
+|}
+|?>
+doctype html
+html(lang="en")
+  head
+    title #{name} style
+    meta(name="keywords", content="Henri Bourcereau, HTML, HTML5, CSS, JavaScript, PHP, AngularJS, node")
+    link(rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.css")
+    link(rel="stylesheet" href="/styles/style.css")
+  body
+h3 Contact
+p 
+  //| Have a project in mind?
+  //| Please provide as much information as possible — budget, requirements, timelines — so I can answer you quickly.<br/>
+  //| I may be available immediately or we can book in advance.
+
+  form(role="form")
+    //.form-group All fields are required.
+    .form-group
+      label(for="name") Nom
+      input#name.form-control(name="name", type="text")
+
+    .form-group
+      label(for="email") Email
+      input#email.form-control(name="email", type="email")
+
+    .form-group
+      label(for="message") Message
+      textarea#message.form-control(name="message", rows="15")
+      
+    button.btn.btn-default(type="submit") Envoyer

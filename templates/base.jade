@@ -1,0 +1,13 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    title #{title}
+    meta(name="keywords", content="Henri Bourcereau, HTML, HTML5, CSS, JavaScript, PHP, AngularJS, node")
+    link(rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.css")
+    link(rel="stylesheet" href="/styles/style.css")
+  body
+    .container
+      include partials/header
+      block content
+      include partials/footer
