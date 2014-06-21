@@ -54,7 +54,7 @@ Back-end :
 * PHP (MVC / OOP)
 * Python (Django)
 * Ruby (Ruby on rails)
-* Node.js, développement de plugins NPM
+* Node.js, développement de modules NPM
 * Base de données : Postgresql, MySQL, MongoDB
 
 CMS
