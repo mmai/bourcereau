@@ -13,14 +13,11 @@
     "metalsmith-stylus": "~0.1.1",
     "metalsmith-collections": "~0.4.1",
     "metalsmith-permalinks": "~0.3.0",
-    "gulp-livereload": "~1.5.0",
     "gulp": "~3.6.2",
-    "tiny-lr": "0.0.7",
-    "express": "~4.2.0",
-    "connect-livereload": "~0.4.0",
     "open": "0.0.5",
     "metalsmith-excerpts": "~1.0.0",
-    "metalsmith-static": "0.0.3"
+    "metalsmith-static": "0.0.3",
+    "browser-sync": "~1.1.1"
   },
   "scripts": {
     "test": "mocha"
