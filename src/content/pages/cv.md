@@ -15,7 +15,7 @@ template: cv.jade
     </div>
 </aside-->
 
-[CV au format PDF](/CV_HenriBourcereau.pdf "CV Henri Bourcereau")
+[![Télécharger au format PDF](/images/pdf-32.png) Télécharger au format PDF](/CV_HenriBourcereau.pdf "CV Henri Bourcereau") 
 
 <h1><small>Ingénieur développement web</small></h1>
 
@@ -23,6 +23,8 @@ template: cv.jade
 **Environnement open-source et méthodologies agiles.**
 
 ## Expérience
+
+**Depuis Mars 2014 Développeur web indépendant**
 
 **Août 2003 - Février 2014  Websiteburo / WSB**
 
@@ -45,25 +47,26 @@ Développeur web
 ## Compétences
 
 ### Développement
-Front-end :
-* HTML5, CSS, bootstrap, compass, grunt, gulp,
-* Javascript : jQuery, Angular, React.js, Backbone, développement de plugins Firefox et Chrome
-* Accessibilité : W3C, Opquast
 
-Back-end : 
+__Back-end__ 
 * PHP (MVC / OOP)
 * Python (Django)
 * Ruby (Ruby on rails)
 * Node.js, développement de modules NPM
 * Base de données : Postgresql, MySQL, MongoDB
 
-CMS
+__CMS__
 * Wordpress (développement de plugins mono et multisite)
 * Drupal (développement de plugins)
 * SPIP (développement de plugins)
 * Prestashop
 
-Méthodes
+__Front-end__
+* HTML5, CSS, bootstrap, compass, grunt, gulp,
+* Javascript : jQuery, Angular, React.js, Backbone, développement de plugins Firefox et Chrome
+* Accessibilité : W3C, Opquast
+
+__Méthodes__
 * UML, Programmation Orientée Objet
 * Tests Driven Development
 * Behaviour Driven Development

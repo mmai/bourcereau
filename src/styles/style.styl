@@ -1,11 +1,23 @@
+bgdark = #e4e4ec
+bglight = #f9f7f2
+//bglight #074249
+ftdark = #4c5257
+//ftcolor = #494b4d
+ftlight = #f9f7f2
+
 html
   height 100%
 body
-  background #f2f0e6
-  color #494b4d
+  background bglight
+  color ftdark
   font-family "droid-serif","Droid Serif",Georgia,serif
   font-size 16px
+a
+  color ftdark
 header
+  background bgdark
+  padding 0 0 10px 0
+  margin 0 0 30px 0
   h1
     display inline-block
   .lang
@@ -15,6 +27,10 @@ header
   li
     display inline-block
     margin-left 10px
+
+.social-links
+  img
+    margin 3px
 
 .cv
   aside
