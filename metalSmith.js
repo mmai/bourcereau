@@ -3,6 +3,7 @@ var Metalsmith = require('metalsmith'),
     stylus   = require('metalsmith-stylus'),
     collections = require('metalsmith-collections'),
     permalinks  = require('metalsmith-permalinks'),
+    include  = require('metalsmith-include'),
     templates  = require('metalsmith-templates');
 
 
@@ -18,6 +19,7 @@ module.exports = function metalSmith(){
           reverse: true
       }
     }))
+    .use(include())
     .use(markdown())
     .use(stylus())
     .use(templates('jade'))

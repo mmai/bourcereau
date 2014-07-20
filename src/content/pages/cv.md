@@ -15,6 +15,7 @@ template: cv.jade
     </div>
 </aside-->
 
+#Curriculum Vitae
 [![Télécharger au format PDF](/images/pdf-32.png) Télécharger au format PDF](/CV_HenriBourcereau.pdf "CV Henri Bourcereau") 
 
 <h1><small>Ingénieur développement web</small></h1>
