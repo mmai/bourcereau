@@ -1,59 +1,17 @@
 extends base
 block content
-  .row
-    .col-md-4
-      .social-links
-        .icon-text
-          a(href="http://twitter.com/mmai") @mmai
-          span.icon32.icon-twitter
-          span.visuallyhidden Twitter
-        .icon-text
-          a(href="http://github.com/mmai") Github
-          span.icon32.icon-github
-          span.visuallyhidden Github
-        .icon-text
-          a(href="https://www.linkedin.com/pub/henri-bourcereau/0/a22/5aa") LinkedIn
-          span.icon32.icon-linkedin
-          span.visuallyhidden Linkedin
-      // div.social-links
-        a(href="http://twitter.com/mmai")
-          img(src="images/bw-twitter-32.png")
-          span. @mmai
-        <br>
-        a(href="http://github.com/mmai")
-          img(src="images/bw-github-32.png")
-          span. github.com/mmai
-        <br>
-        <br>
-        a(href="https://www.linkedin.com/pub/henri-bourcereau/0/a22/5aa")
-          img(src="images/bw-linkedin-32.png")
-          span. LinkedIn
-        <br>
-        a(href="/pages/cv")
-          img(src="images/cv_32.png")
-          span. Curriculum Vitae
-        <br>
-        <br>
-        a(href="tel:+33662178039")
-          img(src="images/phone_32.png")
-          span. (+33) 6 62 17 80 39
-        <br>
-        a(href="/pages/contact")
-          img(src="images/message-32.png")
-          span. Laissez-moi un message
-    .col-md-6
-      div Bienvenue, je suis dévelopeur web indépendant <a href="/pages/freelance">disponible</a>.
+  div Bienvenue, je suis dévelopeur web indépendant <a href="/pages/freelance">disponible</a>.
 
-      .projects.row
-        h2 Quelques projets <small>(plus ou moins sérieux)</small>
-      each project in collections.projects
-        .row
-          h3!= project.title
-          .col-md-9
-            div!= project.contents
-            a(href=project.url)!=project.url
-          .col-md-3
-            a(href=project.url)
-              img(src='images/'+project.screenshot)
+  .projects.row
+    h2 Quelques projets <small>(plus ou moins sérieux)</small>
+  each project in collections.projects
+    .row
+      h3!= project.title
+      .col-md-9
+        div!= project.contents
+        a(href=project.url)!=project.url
+      .col-md-3
+        a(href=project.url)
+          img(src='images/'+project.screenshot)
 
 

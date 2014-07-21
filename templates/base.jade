@@ -9,6 +9,8 @@ html(lang="en")
     link(rel="stylesheet" href="/styles/style.css")
   body
     include partials/header
-    .container
+    .container.container-narrow
       block content
       include partials/footer
+  script(src="/bower_components/jquery/dist/jquery.min.js")
+  script(src="/bower_components/bootstrap/dist/js/bootstrap.min.js")
