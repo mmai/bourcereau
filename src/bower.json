@@ -1,0 +1,23 @@
+{
+  "name": "bourcereau.fr",
+  "version": "0.0.1",
+  "authors": [
+    "Henri Bourcereau <henri@bourcereau.fr>"
+  ],
+  "description": "Site pro Henri Bourcereau",
+  "license": "MIT",
+  "homepage": "http://bourcereau.fr",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.1.1",
+    "font-awesome": "~4.1.0",
+    "icomoon": "~0.0.1"
+  }
+}

@@ -1,0 +1,50 @@
+/*
+
+Comment elements styles
+
+*/
+
+// *******  Social links ********* 
+color-twitter = #00aced
+color-facebook = #3b5998
+color-linkedin = #007bb6
+color-github = black
+
+.social-links
+  margin-top 10px
+
+.icon-social
+  text-decoration none
+  margin 3px
+  span, a
+    vertical-align middle
+    
+.icon-text
+  margin-bottom 3px
+  span, a
+    vertical-align middle
+  font-weight bold
+
+//nib : social icons
+@import '../../node_modules/nib'
+.icon-twitter
+  color color-twitter
+.icon-linkedin
+  color color-linkedin
+.icon-github
+  color color-github
+  // background bgcolor-github
+
+.icon32
+  margin 15px
+  font-size 32px
+
+.visuallyhidden
+    border 0
+    clip rect(0 0 0 0)
+    height 1px
+    margin -1px
+    overflow hidden
+    padding 0
+    position absolute
+    width 1px
