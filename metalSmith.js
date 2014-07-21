@@ -17,6 +17,10 @@ module.exports = function metalSmith(){
           pattern: 'content/posts/*.md',
           sortBy: 'date',
           reverse: true
+      },
+      projects: {
+          pattern: 'content/projects/*.md',
+          sortBy: 'order'
       }
     }))
     .use(include())

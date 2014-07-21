@@ -31,3 +31,16 @@ block content
     .col-md-6
       div Bienvenue, je suis dévelopeur web indépendant <a href="/pages/freelance">disponible</a>.
 
+      .projects.row
+        h2 Quelques projets <small>(plus ou moins sérieux)</small>
+      each project in collections.projects
+        .row
+          h3!= project.title
+          .col-md-9
+            div!= project.contents
+            a(href=project.url)!=project.url
+          .col-md-3
+            a(href=project.url)
+              img(src='images/'+project.screenshot)
+
+
