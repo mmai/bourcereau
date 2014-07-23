@@ -15,35 +15,47 @@ template: cv.jade
     </div>
 </aside-->
 
-#Curriculum Vitae
-[![Télécharger au format PDF](/images/pdf-32.png) Télécharger au format PDF](/CV_HenriBourcereau.pdf "CV Henri Bourcereau") 
+##Curriculum Vitae
 
-<h1><small>Ingénieur développement web</small></h1>
+<a href="/CV_HenriBourcereau.pdf" title="CV Henri Bourcereau" class="icon-file-pdf"> Télécharger au format PDF</a>
+
+<h1>Henri Bourcereau <small>Ingénieur développement web</small></h1>
 
 **Conception et développement back et front-end.**   
 **Environnement open-source et méthodologies agiles.**
 
 ## Expérience
 
-**Depuis Mars 2014 Développeur web indépendant**
+<dl class="dl-horizontal">
+  <dt>Depuis Mars 2014</dt>
+  <dd>
+    <strong>Développeur web indépendant</strong>
+  </dd>
+  <dt>Août 2003 - Février 2014</dt>
+  <dd>
+    <strong>Websiteburo / WSB</strong><br/>
+Co-fondateur, Directeur informatique<br/>
 
-**Août 2003 - Février 2014  Websiteburo / WSB**
+  * Définition des orientations technologiques et organisation de la veille
+  * Mise en place des outils et procédures de développement
+  * Scrum Master
+  * Rédaction des réponses techniques aux appels d'offre
+  * Développeur senior PHP
 
-Co-fondateur, Directeur informatique
-* Définition des orientations technologiques et organisation de la veille
-* Mise en place des outils et procédures de développement
-* Scrum Master
-* Rédaction des réponses techniques aux appels d'offre
-* Développeur senior PHP
-
-**Janvier 2000 - Août 2003 Archimedia**
-
+  </dd>
+  <dt>Janvier 2000 - Août 2003</dt>
+  <dd>
+    <strong>Archimedia</strong><br/>
 Administrateur système, Développeur  
 Directeur informatique à partir de 2001
+  </dd>
+  <dt>Juillet à décembre 1999</dt>
+  <dd>
+    <strong>CETE du Sud-Ouest</strong><br/>
+    Développeur web
+  </dd>
+</dl>
 
-**Juillet à décembre 1999 CETE du Sud-Ouest**
-
-Développeur web
 
 ## Compétences
 

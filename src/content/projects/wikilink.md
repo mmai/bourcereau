@@ -6,5 +6,5 @@ tags: vim
 position: 100
 ---
 
-Plugin Vim facilitant la navigation dans un wiki personnel de type Gollum de Github : charge le fichier lié par simple pression de la touche entrée lorsque le curseur est au-dessus d'un lien et agence les fenêtres en conformité avec la présence de fichiers footer et sidebar.
+Plugin Vim permettant la navigation dans un wiki personnel de type Gollum de Github : gestion des liens entre fichiers et agencement des fenêtres selon la présence de fichiers footer et sidebar.
 

@@ -5,12 +5,13 @@ block content
     // h3 >> Projets (plus ou moins sérieux)
   each project in collections.projects
     .row
-      .col-md-3.screenshots-container
+      .col-xs-4.col-md-3.screenshots-container
         a(href=project.url)
           img.screenshot-thumbnail(src='images/'+project.screenshot)
-      .col-md-9
+      .col-xs-8.col-md-9
         h3!= project.title
         div!= project.contents
-        a(href=project.url)!=project.url
+        a.icon-earth(href=project.url)!=" "+project.title
+      
 
 
