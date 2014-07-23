@@ -34,24 +34,24 @@ html(lang="en")
     link(rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.css")
     link(rel="stylesheet" href="/styles/style.css")
   body
-h3 Contact
-p 
-  //| Have a project in mind?
-  //| Please provide as much information as possible — budget, requirements, timelines — so I can answer you quickly.<br/>
-  //| I may be available immediately or we can book in advance.
+    h1.text-center Contact
+    p 
+      //| Have a project in mind?
+      //| Please provide as much information as possible — budget, requirements, timelines — so I can answer you quickly.<br/>
+      //| I may be available immediately or we can book in advance.
 
-  form(role="form")
-    //.form-group All fields are required.
-    .form-group
-      label(for="name") Nom
-      input#name.form-control(name="name", type="text")
+      form(role="form")
+        //.form-group All fields are required.
+        .form-group
+          label(for="name") Nom
+          input#name.form-control(name="name", type="text")
 
-    .form-group
-      label(for="email") Email
-      input#email.form-control(name="email", type="email")
+        .form-group
+          label(for="email") Email
+          input#email.form-control(name="email", type="email")
 
-    .form-group
-      label(for="message") Message
-      textarea#message.form-control(name="message", rows="15")
-      
-    button.btn.btn-default(type="submit") Envoyer
+        .form-group
+          label(for="message") Message
+          textarea#message.form-control(name="message", rows="15")
+          
+        button.btn.btn-default(type="submit") Envoyer
