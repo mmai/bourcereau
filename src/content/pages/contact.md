@@ -1,4 +1,4 @@
 ---
-title: contact
+title: Contact
 template: contact.jade
 ---
