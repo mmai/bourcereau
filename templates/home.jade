@@ -1,12 +1,11 @@
 extends base
 block content
-  div Bonjour, je suis dévelopeur web indépendant <a href="/pages/freelance">disponible</a>. Vous pouvez me contacter sur Twitter, Github ou LinkedIn.
-
+  .lead!= contents
   .projects.row
-    h2 Quelques projets <small>(plus ou moins sérieux)</small>
+    h3 >> Projets (plus ou moins sérieux)
   each project in collections.projects
     .row
-      h3!= project.title
+      h4!= project.title
       .col-md-9
         div!= project.contents
         a(href=project.url)!=project.url

@@ -6,7 +6,7 @@ screenshot: projects/pataphysical-date-thumbnail.png
 position: 4
 ---
 
-Une bibliothèque javascript, un robot twitter ([@catalpataphysique](http://twitter.com/catalpataphysique)), et une application web pour convertir les dates du calendrier usuel dans le calendrier pataphysique.
+Une bibliothèque javascript, un robot twitter ([@catalpataphysique](http://twitter.com/catalpataphysique)), et une application web de conversion des dates du calendrier usuel vers le calendrier pataphysique.
 
 <!-- La 'Pathaphysique, science des solutions imaginaires, est un mouvement artistique né dans les années 1950 à partir de l'oeuvre d'Alfred Jarry, autour de personnalités comme Boris Vian ou Raymond Queneau. -->
 <!--  -->
