@@ -4,6 +4,5 @@ paginate: entries
 title: Accueil
 ---
 
-[Développeur web indépendant](/pages/freelance) situé à Bordeaux.
-
-Vous pouvez me [laisser un message](/pages/contact) et me retrouver sur [Twitter](http://twitter.com/mmai) et [Github](http://github.com/mmai).
+Bonjour, je suis un [développeur web indépendant](/pages/freelance) situé à Bordeaux, mais on me trouve aussi sur [twitter](http://twitter.com/mmai) et [github](http://github.com/mmai).
+Ici vous pourrez me [laisser un message](/pages/contact) ou découvrir mes projets personnels, plus ou moins sérieux.

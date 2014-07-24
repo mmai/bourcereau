@@ -20,7 +20,7 @@ module.exports = function metalSmith(){
       },
       projects: {
           pattern: 'content/projects/*.md',
-          sortBy: 'order'
+          sortBy: 'position'
       }
     }))
     .use(include())

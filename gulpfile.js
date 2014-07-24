@@ -14,6 +14,7 @@ gulp.task('server', function () {
 gulp.task('watch', function(){
         gulp.watch('./src/content/**/*', ['build']);
         gulp.watch('./src/styles/**/*', ['build']);
+        gulp.watch('./src/*.md', ['build']);
         gulp.watch('./templates/**/*', ['build']);
 });
 
