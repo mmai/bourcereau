@@ -4,6 +4,8 @@ var Metalsmith = require('metalsmith'),
     collections = require('metalsmith-collections'),
     permalinks  = require('metalsmith-permalinks'),
     include  = require('metalsmith-include'),
+    jade  = require('metalsmith-jade'),
+    inspect  = require('metalsmith-inspect'),
     templates  = require('metalsmith-templates');
 
 
@@ -26,10 +28,12 @@ module.exports = function metalSmith(){
     .use(include())
     .use(markdown())
     .use(stylus())
-    .use(templates('jade'))
     .use(permalinks({
-       pattern: ':collection/:title'
+       pattern: ':lang/:collection/:title'
     }))
+    .use(jade())
+    .use(templates('jade'))
+    // .use(inspect())
     .destination('./build')
     .build(function(err,files){
       if (err){ console.log(err); }

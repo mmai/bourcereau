@@ -1,0 +1,34 @@
+header
+  nav.navbar.navbar-default(role="navigation")
+    .container-fluid
+      .navbar-header.container-narrow
+        button.navbar-toggle(type="button",data-toggle="collapse",data-target="#menu-collapse")
+          span.sr-only Toggle navigation
+          span.icon-bar
+          span.icon-bar
+          span.icon-bar
+        span.navbar-brand.visible-xs Henri Bourcereau
+      #menu-collapse.collapse.navbar-collapse
+        - menu = [{title:"Accueil", url: "/"}, {title:"Freelance", url: "/pages/freelance"}, {title: "CV", url: "/pages/cv"}, {title:"Contact", url: "/pages/contact"}]
+        ul.nav.navbar-nav
+          each page in menu
+            if title == page.title
+              li.active
+                a(href=page.url)=page.title
+            else
+              li
+                a(href=page.url)=page.title
+        .social-links.navbar-right.hidden-xs
+          if title != "Accueil"
+            div.navbar-title Henri BOURCEREAU 
+          span.icon-text
+            a(href="http://twitter.com/mmai", title="Twitter").icon32.icon-twitter
+            span.sr-only Twitter
+          span.icon-text
+            a(href="http://github.com/mmai", title="Github").icon32.icon-github
+            span.sr-only Github
+          span.icon-text
+            a(href="https://www.linkedin.com/pub/henri-bourcereau/0/a22/5aa", title="Linkedin").icon32.icon-linkedin
+            span.sr-only Linkedin
+  if title == "Accueil"
+    h1.text-center.hidden-xs Henri Bourcereau

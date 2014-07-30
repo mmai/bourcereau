@@ -7,10 +7,19 @@ header
           span.icon-bar
           span.icon-bar
           span.icon-bar
-        span.navbar-brand.visible-xs Henri Bourcereau
+        // span.navbar-brand.visible-xs Henri Bourcereau
+        if title == "Accueil"
+          a.navbar-brand.active(href="/") Henri Bourcereau 
+        else
+          a.navbar-brand(href="/") Henri Bourcereau 
+      .navbar-right.lang
+        if title == "Accueil"
+          a(href="/en/pages/home/") Switch to english
+        else
+          a(href="/en"+path) Switch to english
       #menu-collapse.collapse.navbar-collapse
-        - menu = [{title:"Accueil", url: "/"}, {title:"Freelance", url: "/pages/freelance"}, {title: "CV", url: "/pages/cv"}, {title:"Contact", url: "/pages/contact"}]
-        ul.nav.navbar-nav
+        - menu = [{title:"Freelance", url: "/pages/freelance"}, {title: "CV", url: "/pages/cv"}, {title:"Contact", url: "/pages/contact"}]
+        ul.nav.navbar-nav.navbar-center
           each page in menu
             if title == page.title
               li.active
@@ -19,16 +28,16 @@ header
               li
                 a(href=page.url)=page.title
         .social-links.navbar-right.hidden-xs
-          if title != "Accueil"
-            div.navbar-title Henri BOURCEREAU 
-          span.icon-text
-            a(href="http://twitter.com/mmai", title="Twitter").icon32.icon-twitter
-            span.sr-only Twitter
-          span.icon-text
-            a(href="http://github.com/mmai", title="Github").icon32.icon-github
-            span.sr-only Github
-          span.icon-text
-            a(href="https://www.linkedin.com/pub/henri-bourcereau/0/a22/5aa", title="Linkedin").icon32.icon-linkedin
-            span.sr-only Linkedin
-  if title == "Accueil"
-    h1.text-center.hidden-xs Henri Bourcereau
+          // if title != "Accueil"
+          //   div.navbar-title Henri BOURCEREAU 
+          // span.icon-text
+          //   a(href="http://twitter.com/mmai", title="Twitter").icon32.icon-twitter
+          //   span.sr-only Twitter
+          // span.icon-text
+          //   a(href="http://github.com/mmai", title="Github").icon32.icon-github
+          //   span.sr-only Github
+          // span.icon-text
+          //   a(href="https://www.linkedin.com/pub/henri-bourcereau/0/a22/5aa", title="Linkedin").icon32.icon-linkedin
+          //   span.sr-only Linkedin
+  // if title == "Accueil"
+  //   h1.text-center.hidden-xs Henri Bourcereau

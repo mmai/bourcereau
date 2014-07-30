@@ -1,5 +1,6 @@
 ---
 title: CV
+lang: .
 template: cv.jade
 ---
 
