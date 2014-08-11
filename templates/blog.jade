@@ -2,8 +2,6 @@ extends base
 block content
   h2!= title
   article
-    ul
-      each post in collections.posts
-        li
-          h3!= post.title
-          article!= post.contents
+    each post in collections.posts
+      h3!= post.title
+      article!= post.contents

@@ -1,5 +1,6 @@
 ---
 title: Un blog
+lang: .
 template: base.jade
 ---
 

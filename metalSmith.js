@@ -23,10 +23,17 @@ module.exports = function metalSmith(){
       projects: {
           pattern: 'content/projects/*.md',
           sortBy: 'position'
+      },
+      projets: {
+          pattern: 'content/projets/*.md',
+          sortBy: 'position'
       }
     }))
     .use(include())
-    .use(markdown())
+    .use(markdown({
+      "gfm": true
+        }
+      ))
     .use(stylus())
     .use(permalinks({
        pattern: ':lang/:collection/:title'

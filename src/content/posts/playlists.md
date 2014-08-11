@@ -1,5 +1,6 @@
 ---
 title: un convertisseur de playlists
+lang: .
 ---
 
 Une bibliothèque modulaire pour retrouver les playlists d'un service musical dans un autre.
