@@ -4,8 +4,7 @@ block content
   .lead!= contents
   br
   .projects.row
-    // h3 >> Projets (plus ou moins sérieux)
-  each project in collections.projects
+  each project in collections.projets
     .row
       .col-xs-4.col-md-3.screenshots-container
         a(href=project.url)
