@@ -27,14 +27,22 @@
 |}
 |?>
 doctype html
-html(lang="en")
+html(lang="fr")
   head
     title #{name} style
     meta(name="keywords", content="Henri Bourcereau, HTML, HTML5, CSS, JavaScript, PHP, AngularJS, node")
     link(rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.css")
     link(rel="stylesheet" href="/styles/style.css")
   body
-    h1.text-center Contact
+    // h1.text-center Contact
+    .lead!= contents
+    .lead
+      .icon-text
+        a(href="mailto:henri@bourcereau.fr", title="email").icon-mail &nbsp;henri@bourcereau.fr
+      .icon-text
+        a(href="tel:+33662178039", title="telephone").icon-phone &nbsp;+33 6 62 17 80 39
+      br
+      |&hellip;ou utilisez le formulaire ci-cessous : 
     p 
       //| Have a project in mind?
       //| Please provide as much information as possible — budget, requirements, timelines — so I can answer you quickly.<br/>
