@@ -4,9 +4,12 @@ var Metalsmith = require('metalsmith'),
     collections = require('metalsmith-collections'),
     permalinks  = require('metalsmith-permalinks'),
     include  = require('metalsmith-include'),
-    jade  = require('metalsmith-jade'),
     inspect  = require('metalsmith-inspect'),
     templates  = require('metalsmith-templates');
+
+//Javascript helpers for use in the templates
+var moment = require('moment');
+var moment_fr = require('moment/locale/fr');
 
 
 module.exports = function metalSmith(){
@@ -38,8 +41,11 @@ module.exports = function metalSmith(){
     .use(permalinks({
        pattern: ':lang/:collection/:title'
     }))
-    .use(jade())
-    .use(templates('jade'))
+    .use(templates({
+        engine: 'jade',
+        moment: moment,
+        moment_fr: moment_fr
+        }))
     // .use(inspect())
     .destination('./build')
     .build(function(err,files){
