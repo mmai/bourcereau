@@ -1,2 +1,5 @@
 build
 node_modules
+src/bower_components/
+src/images/posts
+ressources
