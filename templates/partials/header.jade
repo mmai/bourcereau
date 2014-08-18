@@ -20,10 +20,10 @@ header.container-narrow
           li
             a(href="/en"+path) ENGLISH
       #menu-collapse.collapse.navbar-collapse
-        - menu = [{title:"Accueil", url: "/"}, {title:"Freelance", url: "/pages/freelance"}, {title: "CV", url: "/pages/cv"}, {title:"Contact", url: "/pages/contact"}]
+        - menu = [{title:"Accueil", url: "/", collection:''}, {title:"Blog", url: "/blog", collection:"blog"}, {title:"Freelance", url: "/pages/freelance", collection:''}, {title:"Contact", url: "/pages/contact", collection:''}]
         ul.nav.navbar-nav.navbar-center
           each page in menu
-            if title == page.title
+            if title == page.title || collection == page.collection
               li.active
                 a(href=page.url)=page.title
             else

@@ -5,6 +5,7 @@ var Metalsmith = require('metalsmith'),
     permalinks  = require('metalsmith-permalinks'),
     include  = require('metalsmith-include'),
     inspect  = require('metalsmith-inspect'),
+    excerpts = require('metalsmith-excerpts'),
     templates  = require('metalsmith-templates');
 
 //Javascript helpers for use in the templates
@@ -18,8 +19,8 @@ module.exports = function metalSmith(){
       pages: {
         pattern: 'content/pages/*.md'
       },
-      posts: {
-          pattern: 'content/posts/*.md',
+      blog: {
+          pattern: 'content/blog/*.md',
           sortBy: 'date',
           reverse: true
       },
@@ -37,9 +38,11 @@ module.exports = function metalSmith(){
       "gfm": true
         }
       ))
+    .use(excerpts())
     .use(stylus())
     .use(permalinks({
-       pattern: ':lang/:collection/:title'
+       pattern: ':lang/:collection/:title',
+       relative: false
     }))
     .use(templates({
         engine: 'jade',

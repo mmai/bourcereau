@@ -2,6 +2,12 @@ extends base
 block content
   h2!= title
   article
-    each post in collections.posts
-      h3!= post.title
-      article!= post.contents
+    each post in collections.blog
+      h3
+        small!= moment(post.date).format("DD MMMM YYYY", 'fr')
+        span    
+        span!= post.title
+      article
+        span!= post.excerpt
+        span
+          a(href=post.path) Lire la suite
