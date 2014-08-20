@@ -1,0 +1,31 @@
+extends base
+block content
+  // h1.text-center Contact
+  .lead!= contents
+  .lead
+    .icon-text
+      a(href="mailto:henri@bourcereau.fr", title="email").icon-mail &nbsp;henri@bourcereau.fr
+    .icon-text
+      a(href="tel:+33662178039", title="telephone").icon-phone &nbsp;+33 6 62 17 80 39
+    br
+    |&hellip;or use the following form : 
+  p 
+    //| Have a project in mind?
+    //| Please provide as much information as possible — budget, requirements, timelines — so I can answer you quickly.<br/>
+    //| I may be available immediately or we can book in advance.
+
+    form(role="form")
+      //.form-group All fields are required.
+      .form-group
+        label(for="name") Name
+        input#name.form-control(name="name", type="text")
+
+      .form-group
+        label(for="email") Email
+        input#email.form-control(name="email", type="email")
+
+      .form-group
+        label(for="message") Message
+        textarea#message.form-control(name="message", rows="15")
+        
+      button.btn.btn-default(type="submit") Send

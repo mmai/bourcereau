@@ -3,7 +3,8 @@ title: Glicko2
 url: https://github.com/mmai/glicko2js
 screenshot: projects/glicko2-thumbnail.png
 tags: javascript, node
+lang: en
 position: 5
 ---
 
-Implémentation javascript de Glicko 2, un algorithme d'évaluation du niveau d'un joueur dans les jeux à confrontation directe semblable au système ELO des échecs ou au classement ATP.
+Glicko-2 javascript implementation. The Glicko-2 rating system is a method for assessing a player's strength in games of skill, similar to the chess ELO system or the ATP ranking.

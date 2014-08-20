@@ -2,11 +2,12 @@
 title: LastFM playlists
 tags: react, javascript, node, browserify
 url: http://mmai.github.io/playlists-web/
+lang: en
 screenshot: projects/lastfm-playlists-thumbnail.png
 position: 10
 ---
 
-Application web de recherche des morceaux favoris d'un utilisateur LastFM sur d'autres services musicaux.  
-Version ligne de commande (avec plus de services): [mmai/playlists-bin](https://github.com/mmai/playlists-bin.git).  
-Les deux déclinaisons utilisent une bibliothèque modulaire d'interrogation des API : [mmai/playlists](https://github.com/mmai/playlists)
+Web interface to search LastFM loved tracks on various music services
+Command line version (with more services): [mmai/playlists-bin](https://github.com/mmai/playlists-bin.git).  
+Both versions uses a modular library to query the APIs : [mmai/playlists](https://github.com/mmai/playlists)
 

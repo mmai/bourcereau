@@ -2,9 +2,11 @@
 title: Wikilink
 url: https://github.com/mmai/wikilink
 screenshot: projects/vim-wikilink-thumbnail.png
+lang: en
 tags: vim
 position: 100
 ---
 
-Plugin Vim permettant la navigation dans un wiki personnel de type Gollum de Github : gestion des liens entre fichiers et agencement des fenêtres selon la présence de fichiers footer et sidebar.
+A Vim plugin which eases the navigation between files in a personnal wiki, following Github's Gollum syntax.
+Detects footerbar and sidebar files and splits the window accordingly
 

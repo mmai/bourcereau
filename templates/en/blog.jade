@@ -3,12 +3,12 @@ block content
   h2!= title
   article
     each post in collections.blog
-      if post.lang == '.'
+      if post.lang == 'en'
         h3
-          small!= moment(post.date).format("DD MMMM YYYY", 'fr')
+          small!= moment(post.date).format("MMMM DD, YYYY", 'en')
           span    
           span!= post.title
         article
           span!= post.excerpt
           span
-            a(href=post.path) Lire la suite
+            a(href="/" + post.path) Read more

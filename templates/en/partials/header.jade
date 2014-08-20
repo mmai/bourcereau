@@ -32,7 +32,7 @@ header.container-narrow
           li
             a(href="/") FRANÇAIS
       #menu-collapse.collapse.navbar-collapse
-        - menu = [{title:"Home", url:"/en/pages/home"}, {title:"Freelance", url: "/en/pages/freelance"}, {title: "CV", url: "/pages/cv"}, {title:"Contact", url: "/pages/contact"}]
+        - menu = [{title:"Home", url:"/en/"}, {title:"Blog", url: "/en/blog", collection:"blog"}, {title:"Freelance", url: "/en/pages/freelance"}, {title:"Contact", url: "/en/pages/contact"}]
         ul.nav.navbar-nav.navbar-center
           each page in menu
             if title == page.title

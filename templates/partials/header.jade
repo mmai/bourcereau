@@ -12,13 +12,11 @@ header.container-narrow
           a.navbar-brand.visible-xs.active(href="/") Henri Bourcereau 
         else
           a.navbar-brand.visible-xs(href="/") Henri Bourcereau 
-      // ul.nav.navbar-nav.navbar-right.hidden-xs.lang
-        if title == "Accueil"
-          li
-            a(href="/en/pages/home/") ENGLISH
-        else
-          li
-            a(href="/en"+path) ENGLISH
+      ul.nav.navbar-nav.navbar-right.hidden-xs.lang
+        li
+          a(href="/en/") ENGLISH
+        // li
+          a(href="/en"+path) ENGLISH
       #menu-collapse.collapse.navbar-collapse
         - menu = [{title:"Accueil", url: "/", collection:''}, {title:"Blog", url: "/blog", collection:"blog"}, {title:"Freelance", url: "/pages/freelance", collection:''}, {title:"Contact", url: "/pages/contact", collection:''}]
         ul.nav.navbar-nav.navbar-center

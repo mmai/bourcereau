@@ -1,6 +1,6 @@
 ---
-template: blog.jade
+template: en/blog.jade
 paginate: entries
-lang: .
+lang: en
 title: Blog
 ---

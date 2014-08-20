@@ -1,12 +1,12 @@
 ---
-title: Calendrier pataphysique
+title: Pataphysical calendar
 tags: bower, npm, api twitter
 url: http://mmai.github.io/pataphysical-date/ 
 screenshot: projects/pataphysical-date-thumbnail.png
 position: 4
 ---
 
-Une bibliothèque javascript, un robot twitter ([@calpataphysique](http://twitter.com/calpataphysique)), et une application web de conversion des dates du calendrier usuel vers le calendrier pataphysique.
+A javascript library, a twitter bot ([@calpataphysique](http://twitter.com/calpataphysique)), and a web app which convert Gregorian dates to the Pataphysical calendar.
 
 <!-- La 'Pathaphysique, science des solutions imaginaires, est un mouvement artistique né dans les années 1950 à partir de l'oeuvre d'Alfred Jarry, autour de personnalités comme Boris Vian ou Raymond Queneau. -->
 <!--  -->
