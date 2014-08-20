@@ -6,9 +6,9 @@ lang: en
 template: en/post.jade
 ---
 
-When designing a web interface allowing the deletion of data, one often add a security layer by asking the user to confirm his action.
+When designing a web interface allowing data deletion, one often add a security layer by asking the user to confirm his action.
 
-This is not an ideal method for the user: his work is interrupted by a dialogue box most of the time irrelevant  (it is relevant only when he actually made an error). He is slowed by the necessity to validate twice and suffer the stress of this micro-anxiety box. Furthermore, in a session of repeated deletions, he can make a habit of systematically validating twice, not paying anymore attention to the warning window, rendering it ineffective.
+This is not an ideal method for the user: his work is interrupted by a dialog box which is irrelevant most of the time  (it is relevant only when he actually make an error). He is slowed by the necessity to validate twice and suffer the stress of this micro-anxiety box. Furthermore, in a session of repeated deletions, he can make a habit of systematically validating twice, not paying anymore attention to the warning window, rendering it ineffective.
 
 I favor a less intrusive solution: the immediate removal, without prompting, but with the option to cancel the action if an error occurs. This streamlines the workflow and the user knows he can always go back.
 

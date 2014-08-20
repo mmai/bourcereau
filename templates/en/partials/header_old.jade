@@ -1,4 +1,16 @@
 header.container-narrow
+  .hidden-xs.brandspace
+    h2 Henri Bourcereau
+    .social-links
+        span.icon-text
+          a(href="http://twitter.com/mmai", title="Twitter").icon32.icon-twitter
+          span.sr-only Twitter
+        span.icon-text
+          a(href="http://github.com/mmai", title="Github").icon32.icon-github
+          span.sr-only Github
+        span.icon-text
+          a(href="https://www.linkedin.com/pub/henri-bourcereau/0/a22/5aa", title="Linkedin").icon32.icon-linkedin
+          span.sr-only Linkedin
   nav.navbar.navbar-default(role="navigation")
     .container-fluid
       .navbar-header.container-narrow
@@ -13,26 +25,19 @@ header.container-narrow
         else
           a.navbar-brand.visible-xs(href="/") Henri Bourcereau 
       ul.nav.navbar-nav.navbar-right.hidden-xs.lang
-        li
-          a(href="/") FRANÇAIS
+        if title == "Home"
+          li
+            a(href="/") FRANÇAIS
+        else
+          li
+            a(href="/") FRANÇAIS
       #menu-collapse.collapse.navbar-collapse
-        - menu = [{title:"Home", url:"/en/", collection:''}, {title:"Blog", url: "/en/blog", collection:"blog"}, {title:"Freelance", url: "/en/pages/freelance", collection:''}, {title:"Contact", url: "/en/pages/contact", collection:''}]
+        - menu = [{title:"Home", url:"/en/"}, {title:"Blog", url: "/en/blog", collection:"blog"}, {title:"Freelance", url: "/en/pages/freelance"}, {title:"Contact", url: "/en/pages/contact"}]
         ul.nav.navbar-nav.navbar-center
           each page in menu
-            if title == page.title || collection == page.collection
+            if title == page.title
               li.active
                 a(href=page.url)=page.title
             else
               li
                 a(href=page.url)=page.title
-        .social-links.navbar-right
-            span.icon-text
-              a(href="http://twitter.com/mmai", title="Twitter").icon32.icon-twitter
-              span.sr-only Twitter
-            span.icon-text
-              a(href="http://github.com/mmai", title="Github").icon32.icon-github
-              span.sr-only Github
-            span.icon-text
-              a(href="https://www.linkedin.com/pub/henri-bourcereau/0/a22/5aa", title="Linkedin").icon32.icon-linkedin
-              span.sr-only Linkedinheader.container-narrow
-

@@ -1,6 +1,6 @@
 extends base
 block content
-  h2!= title
+  h2 Derniers articles
   article
     each post in collections.blog
       if post.lang == '.'
