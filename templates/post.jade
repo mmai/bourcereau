@@ -3,7 +3,8 @@ block content
   .post
     h2!= title
     .metas
-      span.date!= "Publié le " + moment(date).format("dddd DD MMMM YYYY", 'fr')
+      - moment.locale('fr')
+      span.date!= "Publié le " + moment(date).format("dddd DD MMMM YYYY")
       // span  - 
       // span Henri Bourcereau
     div!= contents

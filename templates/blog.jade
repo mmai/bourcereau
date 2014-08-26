@@ -5,7 +5,8 @@ block content
     each post in collections.blog
       if post.lang == '.'
         h3
-          small!= moment(post.date).format("DD MMMM YYYY", 'fr')
+          - moment.locale('fr')
+          small!= moment(post.date).format("DD MMMM YYYY")
           span    
           span!= post.title
         article

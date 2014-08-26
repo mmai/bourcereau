@@ -18,15 +18,12 @@ header.container-narrow
         // li
           a(href="/en"+path) ENGLISH
       #menu-collapse.collapse.navbar-collapse
-        - menu = [{title:"Accueil", url: "/", collection:''}, {title:"Blog", url: "/blog", collection:"blog"}, {title:"Freelance", url: "/pages/freelance", collection:''}, {title:"Contact", url: "/pages/contact", collection:''}]
+        - menu = [{title:"Accueil", url: "/", collection:""}, {title:"Blog", url: "/blog", collection:"blog"}, {title:"Freelance", url: "/pages/freelance", collection:""}, {title:"Contact", url: "/pages/contact", collection:""}]
         ul.nav.navbar-nav.navbar-center
           each page in menu
-            if title == page.title || collection == page.collection
-              li.active
-                a(href=page.url)=page.title
-            else
-              li
-                a(href=page.url)=page.title
+            - var is_current = (path == page.url || "/" + path == page.url || collection == page.collection)
+            li(class=is_current?'active':'')
+              a(href=page.url)=page.title
         .social-links.navbar-right
             span.icon-text
               a(href="http://twitter.com/mmai", title="Twitter").icon32.icon-twitter

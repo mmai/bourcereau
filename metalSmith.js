@@ -11,8 +11,6 @@ var Metalsmith = require('metalsmith'),
 //Javascript helpers for use in the templates
 var moment = require('moment');
 var moment_fr = require('moment/locale/fr');
-var moment_en = require('moment/locale/en-gb');
-
 
 module.exports = function metalSmith(){
   return Metalsmith(__dirname)
@@ -47,9 +45,7 @@ module.exports = function metalSmith(){
     }))
     .use(templates({
         engine: 'jade',
-        moment: moment,
-        moment_fr: moment_fr,
-        moment_en: moment_en
+        moment: moment
         }))
     // .use(inspect())
     .destination('./build')
