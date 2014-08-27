@@ -6,7 +6,7 @@ lang: en
 template: post.jade
 ---
 
-I made this site with a static pages generator. Several reasons for that: ease of hosting and archiving, performance ... and then I just gave in to fashion!
+I made this site with a static pages generator. Several reasons for that: ease of hosting and archiving, performance ... and I just gave in to fashion!
 
 The best known tools are [Jekyll](http://jekyllrb.com/) used to make Github pages, or [Pelican](http://blog.getpelican.com/) in the Python world, but I choose [Metalsmith](http://www.metalsmith.io/), a modular javascript solution, very easy to extend, and benefiting from the huge ecosystem of libraries available on npm.
 
@@ -14,7 +14,7 @@ Robin Thrift wrote a [very good three parts introductory tutorial](http://www.ro
 
 Apart from these references, the documentation is quite poor. I document here the problems I faced and the techniques I used to solve them.
 
-## Gulp
+### Gulp
 
 First of all, I inserted Metalsmith into a Gulp script. The gulp script enable live-reload in the browser and automatically generate HTML pages each time a source file is modified.
 For this I encapsulated the Metalsmith generation script in a CommonJS module in order to call it from the gulpfile.js file.
@@ -66,7 +66,7 @@ gulp.task('build', function(){
 
 Notice the final error handling in metalsmith.js, very useful when debugging.
 
-## Jade configuration
+### Jade configuration
 
 I replaced Handlebar by the elegant and concise [Jade](http://jade-lang.com) as a template system.
 Jade allows external libraries usage, but unlike Handlebars, you must explicitly declare them in the options when calling the _templates()_ function. Here I use [Moment.js](http://momentjs.com/), a dates manipulation library.

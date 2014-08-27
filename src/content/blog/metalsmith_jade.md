@@ -13,7 +13,7 @@ Robin Thrift a écrit un [très bon tutoriel d'introduction](http://www.robinthr
 
 En dehors de ces références, la documentation reste encore famélique. Je documente ici les problèmes auxquels j'ai été confrontés et les techniques que j'ai employées pour les résoudre.
 
-## Cohabitation avec Gulp
+### Cohabitation avec Gulp
 
 Avant toute chose, j'ai intégré Metalsmith à un script Gulp afin de générer automatiquement les pages HTML à chaque modification de fichier source et de bénéficier du live-reload dans le navigateur. 
 Pour cela j'ai encapsulé le script de génération Metalsmith dans un module CommonJs pour l'appeler ensuite depuis le fichier gulpfile.js.
@@ -65,7 +65,7 @@ gulp.task('build', function(){
 
 Notez dans metalsmith.js l'interception finale des erreurs, bien utile pour le débogage.
 
-## Utilisation de Jade
+### Utilisation de Jade
 
 J'ai remplacé le système de template Handlebars par [Jade](http://jade-lang.com) dont j'apprécie l'élégance et la concision.
 Jade autorise l'utilisation de bibliothèques externes, mais à la différence d'Handlebars, il faut explicitement les déclarer dans les options lors de l'appel de la fonction _templates()_. Ici j'utilise la bibliothèque de manipulation des dates [moment](http://momentjs.com/) : 
