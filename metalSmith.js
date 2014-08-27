@@ -6,14 +6,15 @@ var Metalsmith = require('metalsmith'),
     include  = require('metalsmith-include'),
     inspect  = require('metalsmith-inspect'),
     excerpts = require('metalsmith-excerpts'),
+    drafts = require('metalsmith-drafts'),
     templates  = require('metalsmith-templates');
 
 //Javascript helpers for use in the templates
 var moment = require('moment');
-var moment_fr = require('moment/locale/fr');
 
 module.exports = function metalSmith(){
   return Metalsmith(__dirname)
+    .use(drafts())
     .use(collections({
       pages: {
         pattern: 'content/pages/*.md'
