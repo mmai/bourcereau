@@ -3,7 +3,7 @@ title: Using Metalsmith with Jade
 date: 2014-08-20
 tags: metalsmith, jade, gulp, static, javascript
 lang: en
-template: post.jade
+template: en/post.jade
 ---
 
 I made this site with a static pages generator. Several reasons for that: ease of hosting and archiving, performance ... and I just gave in to fashion!

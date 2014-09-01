@@ -8,7 +8,7 @@ block content
           - moment.locale('fr')
           small!= moment(post.date).format("DD MMMM YYYY")
           span    
-          span!= post.title
+            a(href=post.path)!= post.title
         article
           span!= post.excerpt
           span

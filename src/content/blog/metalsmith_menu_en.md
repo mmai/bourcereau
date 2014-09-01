@@ -1,15 +1,15 @@
 ---
-title: Un simple menu avec Metalsmith
+title: A simple menu with Metalsmith
 draft: false
 date: 2014-08-26
 tags: metalsmith, jade, static, javascript
-lang: .
-template: post.jade
+lang: en
+template: en/post.jade
 ---
 
-Voici une technique pour appliquer un style spécifique sur l'entrée de menu associée à la page courante.
+Here's a technique to apply a specific style on the menu item associated with the current page.
 
-Metalsmith nous permet de connaitre l'url de la page courante avec la variable "path" disponible dans le contexte du template. Une simple boucle sur un tableau contenant les pages de destination de chaque entrée du menu nous permet donc de parvenir à nos fins : 
+Metalsmith allows us to get the URL of the current page with the "path" variable available in the template context. A simple loop over an array containing the destinations of each menu item allows us to achieve our goal:
 
 
 ```jade
@@ -21,9 +21,9 @@ Metalsmith nous permet de connaitre l'url de la page courante avec la variable "
         a(href=page.url)=page.title
 ```
 
-On peut associer une même entrée de menu à tous les pages d'un même ensemble (les articles d'un blog par exemple) en testant également la métadonné "collection". Cela permet de gérer des urls dynamiques de type /blog/titredelarticle/ sans avoir recours à des expressions régulières aux effets de bord indésirables.
+We can associate a single menu entry to all pages of a same set (blog posts for example) by also testing the metadata "collection". This allows us to manage dynamic urls like _/blog/title/_ without using regular expressions which could bring unfortunate side effects.
 
-En pratique, j'ai défini une catégorie blog dans mon fichier metalsmith.js et une structure d'url que je pourrai modifier (ajouter l'année et le mois avant le titre par exemple) sans avoir à toucher au template du menu. 
+In practice, I have defined a _blog_ collection in my metalsmith.js file and a url structure that I can edit (by adding the year and the month before the title for example) without having to touch the template menu.
 
 ```javascript
   return Metalsmith(__dirname)
@@ -43,7 +43,7 @@ En pratique, j'ai défini une catégorie blog dans mon fichier metalsmith.js et 
     }))
 ```
 
-Avec le code suivant, l'entrée de menu 'Blog' sera sélectionnée sur les pages d'articles de la collection "blog".
+With the following code, the menu entry 'Blog' will be featured on the articles belonging to the "blog" collection:
 
 
 ```jade
