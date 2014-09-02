@@ -1,5 +1,5 @@
 ---
-title: Utiliser jade avec Metalsmith
+title: Utiliser Jade avec Metalsmith
 date: 2014-08-20
 tags: metalsmith, jade, gulp, static, javascript
 lang: .

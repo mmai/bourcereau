@@ -1,7 +1,5 @@
 extends base
 block content
-  // h1.text-center.hidden-xs Henri Bourcereau
-  br
   .lead!= contents
   .projects.row
   - projects = (lang === 'en')?collections.projects:collections.projets
@@ -14,4 +12,6 @@ block content
         h3!= project.title
         div!= project.contents
         a.icon-earth(href=project.url)!=" "+project.title
+      
+
 

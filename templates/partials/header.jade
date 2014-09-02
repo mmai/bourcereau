@@ -7,18 +7,16 @@ header.container-narrow
           span.icon-bar
           span.icon-bar
           span.icon-bar
-        // span.navbar-brand.visible-xs Henri Bourcereau
-        if title == "Accueil"
-          a.navbar-brand.visible-xs.active(href="/") Henri Bourcereau 
-        else
-          a.navbar-brand.visible-xs(href="/") Henri Bourcereau 
+        a.navbar-brand.visible-xs.active(href="/", class=(title == 'Accueil' || title == 'Home')?'active':'') Henri Bourcereau 
       ul.nav.navbar-nav.navbar-right.hidden-xs.lang
         li
-          a(href="/en/") ENGLISH
-        // li
-          a(href="/en"+path) ENGLISH
+          if (lang == "en")
+            a(href="/") FRANÇAIS
+            - menu = [{title:"Home", url:"/en", collection:""}, {title:"Blog", url: "/en/blog", collection:"blog"}, {title:"Freelance", url: "/en/pages/freelance", collection:''}, {title:"Contact", url: "/en/pages/contact", collection:''}]
+          else
+            a(href="/en/") ENGLISH
+            - menu = [{title:"Accueil", url: "/", collection:""}, {title:"Blog", url: "/blog", collection:"blog"}, {title:"Freelance", url: "/pages/freelance", collection:""}, {title:"Contact", url: "/pages/contact", collection:""}]
       #menu-collapse.collapse.navbar-collapse
-        - menu = [{title:"Accueil", url: "/", collection:""}, {title:"Blog", url: "/blog", collection:"blog"}, {title:"Freelance", url: "/pages/freelance", collection:""}, {title:"Contact", url: "/pages/contact", collection:""}]
         ul.nav.navbar-nav.navbar-center
           each page in menu
             - var is_current = (path == page.url || "/" + path == page.url || collection == page.collection)

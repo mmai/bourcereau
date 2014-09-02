@@ -1,15 +1,15 @@
 extends base
 block content
-  h2 Derniers articles
+  h1.text-center Derniers articles
   article
     each post in collections.blog
       if post.lang == '.'
         h3
-          - moment.locale('fr')
-          small!= moment(post.date).format("DD MMMM YYYY")
           span    
             a(href=post.path)!= post.title
-        article
-          span!= post.excerpt
-          span
-            a(href=post.path) Lire la suite
+          - moment.locale('fr')
+          &nbsp;
+          small!= moment(post.date).format("DD MMMM YYYY")
+        article!= post.excerpt
+          // span
+            a(href=post.path) lire la suite

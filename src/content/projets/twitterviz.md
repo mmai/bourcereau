@@ -6,4 +6,4 @@ screenshot: projects/twitterviz-thumbnail.png
 position: 1
 ---
 
-Calcul le trajet idéal pour faire le tour du monde (ou pour aller vers n'importe quelle destination) en faisant étape chez vos followers Twitter.
+Calcule le trajet idéal permettant de faire le tour du monde en faisant étape chez ses followers Twitter.
