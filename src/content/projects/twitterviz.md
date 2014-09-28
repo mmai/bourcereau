@@ -3,6 +3,7 @@ title: Twitterviz
 tags: twitter api, geolocation
 url: http://github.com/mmai/twitterviz/ 
 screenshot: projects/twitterviz-thumbnail.png
+draft: true
 position: 1
 ---
 
