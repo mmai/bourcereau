@@ -4,6 +4,7 @@ url: https://github.com/mmai/wikilink
 screenshot: projects/vim-wikilink-thumbnail.png
 lang: en
 tags: vim
+draft: true
 position: 100
 ---
 

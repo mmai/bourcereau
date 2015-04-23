@@ -3,6 +3,7 @@ title: Wikilink
 url: https://github.com/mmai/wikilink
 screenshot: projects/vim-wikilink-thumbnail.png
 tags: vim
+draft: true
 position: 100
 ---
 

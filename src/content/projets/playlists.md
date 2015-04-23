@@ -3,7 +3,7 @@ title: LastFM playlists
 tags: react, javascript, node, browserify
 url: http://mmai.github.io/playlists-web/
 screenshot: projects/lastfm-playlists-thumbnail.png
-position: 10
+position: 20
 ---
 
 Application web de recherche des morceaux favoris d'un utilisateur LastFM sur d'autres services musicaux.  
