@@ -63,21 +63,21 @@ Directeur informatique à partir de 2001
 ### Développement
 
 __Back-end__ 
-* PHP (MVC / OOP)
+* PHP (MVC / OOP), Symfony
+* Node.js, développement de modules NPM
 * Python (Django)
 * Ruby (Ruby on rails)
-* Node.js, développement de modules NPM
 * Base de données : Postgresql, MySQL, MongoDB
 
 __CMS__
 * Wordpress (développement de plugins mono et multisite)
-* Drupal (développement de plugins)
 * SPIP (développement de plugins)
+* Drupal (développement de plugins)
 * Prestashop
 
 __Front-end__
 * HTML5, CSS, bootstrap, compass, grunt, gulp,
-* Javascript : jQuery, Angular, React.js, Backbone, développement de plugins Firefox et Chrome
+* Javascript : jQuery, React.js, Angular, Backbone, développement de plugins Firefox et Chrome
 * Accessibilité : W3C, Opquast
 
 __Méthodes__
@@ -116,5 +116,5 @@ __Méthodes__
 
 <!--### Loisirs
 * Lecture 
-* Running, Tai Chi Chuan, Badminton
+* Running, Tai Chi Chuan
 -->

@@ -1,1 +1,1 @@
-rsync -azv build/ henri@rhumbs.fr:/var/www/bourcereau/www/
+rsync -azv build/ admin@rhumbs.fr:/var/www/bourcereau/www/
