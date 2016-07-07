@@ -1,5 +1,5 @@
 ---
-title: A talking clock on Linux
+title: A little productivity hack on Linux
 date: 2015-09-07
 tags: productivity, linux
 lang: en
