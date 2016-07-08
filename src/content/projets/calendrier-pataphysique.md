@@ -3,7 +3,7 @@ title: Calendrier pataphysique
 tags: bower, npm, api twitter
 url: http://mmai.github.io/pataphysical-date/ 
 screenshot: projects/pataphysical-date-thumbnail.png
-position: 4
+position: 6
 ---
 
 Une bibliothèque javascript, un robot twitter ([@calpataphysique](http://twitter.com/calpataphysique)), et une application web de conversion des dates du calendrier usuel vers le calendrier pataphysique.
