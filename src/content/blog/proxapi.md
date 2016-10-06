@@ -31,14 +31,13 @@ Nous allons utiliser Proxapi pour lancer la requête toutes les minutes tant que
 
 ```
 var geocoder_proxy = new Proxapi({
-  strategy: 'retry',
-  retry_delay: 60, //On tente la requête toutes les minutes
+  retryDelay: 60, //On tente la requête toutes les minutes
   translate: function(params, proxy_callback){
         //...
         }
 };
 
-geocoder_proxy.call({address: 'Bordeaux, France'}, function(err, results){
+geocoder_proxy.call({address: 'Bordeaux, France'}, {strategy: 'retry'}, function(err, results){
   if (err) {
     console.log(err);
   } else {

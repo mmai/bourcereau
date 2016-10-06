@@ -31,14 +31,14 @@ We are going to use Proxapi in order to call the API every minute if we are noti
 
 ```
 var geocoder_proxy = new Proxapi({
-  strategy: 'retry',
-  retry_delay: 60, // Retrying every minute
+  retryDelay: 60, // Retrying every minute
   translate: function(params, proxy_callback){
         //...
         }
 };
 
-geocoder_proxy.call({address: 'Bordeaux, France'}, function(err, results){
+  
+geocoder_proxy.call({address: 'Bordeaux, France'}, {strategy: 'retry'} ,function(err, results){
   if (err) {
     console.log(err);
   } else {
