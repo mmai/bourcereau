@@ -13,7 +13,7 @@ Metalsmith nous permet de connaitre l'url de la page courante avec la variable "
 
 
 ```jade
-- menu = [{title:"Accueil", url: "/"}, {title:"Blog", url: "/blog"}, {title:"Freelance", url: "/pages/freelance"}, {title:"Contact", url: "/pages/contact"}]
+- menu = [{title:"Accueil", url: "/"}, {title:"Blog", url: "/blog"}, {title:"CV", url: "/pages/cv"}, {title:"Contact", url: "/pages/contact"}]
   ul.nav.navbar-nav.navbar-center
     each page in menu
       - var is_current = (path == page.url)
@@ -47,7 +47,7 @@ Avec le code suivant, l'entrée de menu 'Blog' sera sélectionnée sur les pages
 
 
 ```jade
-- menu = [{title:"Accueil", url: "/", collection:""}, {title:"Blog", url: "/blog", collection:"blog"}, {title:"Freelance", url: "/pages/freelance", collection:""}, {title:"Contact", url: "/pages/contact", collection:""}]
+- menu = [{title:"Accueil", url: "/", collection:""}, {title:"Blog", url: "/blog", collection:"blog"}, {title:"CV", url: "/pages/cv", collection:""}, {title:"Contact", url: "/pages/contact", collection:""}]
   ul.nav.navbar-nav.navbar-center
     each page in menu
       - var is_current = (path == page.url || collection == page.collection)

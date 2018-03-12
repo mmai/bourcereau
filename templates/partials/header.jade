@@ -12,10 +12,10 @@ header.container-narrow
         li
           if (lang == "en")
             a(href="/") FRANÇAIS
-            - menu = [{title:"Home", url:"/en", collection:""}, {title:"Blog", url: "/en/blog", collection:"blog"}, {title:"Freelance", url: "/en/pages/freelance", collection:''}, {title:"Contact", url: "/en/pages/contact", collection:''}]
+            - menu = [{title:"Home", url:"/en", collection:""}, {title:"Blog", url: "/en/blog", collection:"blog"}, {title:"CV", url: "/en/pages/cv", collection:''}, {title:"Contact", url: "/en/pages/contact", collection:''}]
           else
             a(href="/en/") ENGLISH
-            - menu = [{title:"Accueil", url: "/", collection:""}, {title:"Blog", url: "/blog", collection:"blog"}, {title:"Freelance", url: "/pages/freelance", collection:""}, {title:"Contact", url: "/pages/contact", collection:""}]
+            - menu = [{title:"Accueil", url: "/", collection:""}, {title:"Blog", url: "/blog", collection:"blog"}, {title:"CV", url: "/pages/cv", collection:""}, {title:"Contact", url: "/pages/contact", collection:""}]
       #menu-collapse.collapse.navbar-collapse
         ul.nav.navbar-nav.navbar-center
           each page in menu
